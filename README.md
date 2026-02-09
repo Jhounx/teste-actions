@@ -27,4 +27,3 @@ O workflow é executado automaticamente em cada pull request para a branch `main
 - Instalação das dependências
 - Execução dos testes
 - Verificação de sintaxe
-
